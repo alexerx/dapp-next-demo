@@ -1,2 +1,13 @@
 # dapp-next-demo
-dapp vite demo
+
+tech stack:
+
+- **pnpm**
+- next.js
+- ethers.js + wagmi
+- chakra ui
+- recoil
+
+TODO:
+
+- i18n?

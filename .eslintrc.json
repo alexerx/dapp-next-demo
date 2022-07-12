@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    "no-unused-vars": "warn",
+    "import/order": [
+      1,
+      {
+        "groups": [
+          "external",
+          "builtin",
+          "internal",
+          "sibling",
+          "parent",
+          "index"
+        ]
+      }
+    ],
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "import/no-unused-modules": [
+      1,
+      {
+        "unusedExports": true,
+        "ignoreExports": [
+          "pages/**/*/index.tsx",
+          "pages/index.tsx",
+          "pages/api/*",
+          "pages/_*"
+        ]
+      }
+    ]
+  },
+  "plugins": ["import"]
+}
