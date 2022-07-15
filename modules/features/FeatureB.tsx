@@ -11,7 +11,7 @@ import {
 
 export const FeatureB: React.FC = () => {
   return (
-    <Box bg={'gray.800'} position={'relative'}>
+    <Box position={'relative'}>
       <Flex
         flex={1}
         zIndex={0}
@@ -35,7 +35,6 @@ export const FeatureB: React.FC = () => {
         <Stack direction={{ base: 'column', lg: 'row' }}>
           <Stack
             flex={1}
-            color={'gray.400'}
             justify={{ lg: 'center' }}
             py={{ base: 4, md: 20, xl: 60 }}
           >
@@ -46,18 +45,16 @@ export const FeatureB: React.FC = () => {
                 textTransform={'uppercase'}
                 mb={3}
                 fontSize={'xl'}
-                color={'gray.500'}
               >
                 Technology
               </Text>
               <Heading
-                color={'white'}
                 mb={5}
                 fontSize={{ base: '3xl', md: '5xl' }}
               >
                 21st century agriculture
               </Heading>
-              <Text fontSize={'xl'} color={'gray.400'}>
+              <Text fontSize={'xl'}>
                 The NewLife™ technology allows you to monitor your crops and get
                 complete insights at real time. The proprietary
                 software/hardware ecosystem prevents your plants from getting
@@ -71,12 +68,11 @@ export const FeatureB: React.FC = () => {
                   <Text
                     fontFamily={'heading'}
                     fontSize={'3xl'}
-                    color={'white'}
                     mb={3}
                   >
                     {stat.title}
                   </Text>
-                  <Text fontSize={'xl'} color={'gray.400'}>
+                  <Text fontSize={'xl'}>
                     {stat.content}
                   </Text>
                 </Box>
@@ -91,7 +87,7 @@ export const FeatureB: React.FC = () => {
 };
 
 const StatsText = ({ children }: { children: ReactNode }) => (
-  <Text as={'span'} fontWeight={700} color={'white'}>
+  <Text as={'span'} fontWeight={700}>
     {children}
   </Text>
 );
