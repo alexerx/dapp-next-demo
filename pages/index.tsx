@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
-import { HomePageNav } from '../modules/navs/HomePageNav';
 import { Footer } from '../modules/footers/Footer';
-import { FeatureA } from '../modules/features/FeatureA';
 import { HomeGuide } from '../modules/guides/HomeGuide';
-import { FeatureB } from '../modules/features/FeatureB';
+import { FeatureA } from '../modules/home/features/FeatureA';
+import { FeatureB } from '../modules/home/features/FeatureB';
+import { HomePageNav } from '../modules/navs/HomePageNav';
 
 const Home: NextPage = () => {
   return (
