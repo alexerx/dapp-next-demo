@@ -2,18 +2,18 @@ import {
   Box,
   chakra,
   Container,
+  IconButton,
+  Input,
   Link,
   SimpleGrid,
   Stack,
   Text,
-  VisuallyHidden,
-  Input,
-  IconButton,
   useColorModeValue,
+  VisuallyHidden,
 } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
+import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Logo = (props: any) => {
   return (
@@ -77,10 +77,8 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 
 export const Footer: React.FC = () => {
   return (
-    <Box
-      color={useColorModeValue('gray.700', 'gray.200')}
-    >
-      <Container as={Stack} maxW={'6xl'} py={10}>
+    <Box mt={40} color={useColorModeValue('gray.700', 'gray.200')}>
+      <Container as={Stack} maxW={'7xl'} py={12}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
           spacing={8}
@@ -89,9 +87,7 @@ export const Footer: React.FC = () => {
             <Box>
               <Logo color={useColorModeValue('gray.700', 'white')} />
             </Box>
-            <Text fontSize={'sm'}>
-              © 2022 metagate. All rights reserved
-            </Text>
+            <Text fontSize={'sm'}>© 2022 metagate. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Twitter'} href={'#'}>
                 <FaTwitter />

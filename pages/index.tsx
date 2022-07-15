@@ -1,16 +1,16 @@
 import type { NextPage } from 'next';
-import { Footer } from '../modules/footers/Footer';
-import { HomeGuide } from '../modules/guides/HomeGuide';
+import { Footer } from '../modules/common/footers/Footer';
 import { FeatureA } from '../modules/home/features/FeatureA';
 import { FeatureB } from '../modules/home/features/FeatureB';
-import { HomePageNav } from '../modules/navs/HomePageNav';
+import { Intro } from '../modules/home/Intro';
+import { Nav } from '../modules/home/Nav';
 
 const Home: NextPage = () => {
   return (
     <>
-      <HomePageNav />
+      <Nav />
 
-      <HomeGuide />
+      <Intro />
 
       <FeatureB />
       <FeatureA />

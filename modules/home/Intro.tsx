@@ -1,18 +1,18 @@
 import {
-  Container,
-  Stack,
-  Flex,
   Box,
-  Heading,
-  Text,
   Button,
-  Image,
+  Container,
+  Flex,
+  Heading,
   Icon,
   IconButton,
   IconProps,
+  Image,
+  Stack,
+  Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { PlayIcon } from '../../components/icons/PlayIcon';
+import { PlayIcon } from '../../core/components/icons/PlayIcon';
 
 export const Blob: React.FC<IconProps> = (props) => {
   return (
@@ -33,7 +33,7 @@ export const Blob: React.FC<IconProps> = (props) => {
   );
 };
 
-export const HomeGuide: React.FC = () => {
+export const Intro: React.FC = () => {
   return (
     <Container maxW={'7xl'}>
       <Stack
@@ -51,6 +51,7 @@ export const HomeGuide: React.FC = () => {
             <Text
               as={'span'}
               position={'relative'}
+              whiteSpace={'nowrap'}
               _after={{
                 content: "''",
                 width: 'full',

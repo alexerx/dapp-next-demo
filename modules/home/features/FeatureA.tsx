@@ -1,21 +1,21 @@
 import {
   Container,
-  SimpleGrid,
-  Image,
   Flex,
   Heading,
-  Text,
+  Icon,
+  Image,
+  SimpleGrid,
   Stack,
   StackDivider,
-  Icon,
+  Text,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { ReactElement } from 'react';
 import {
   IoAnalyticsSharp,
   IoLogoBitcoin,
   IoSearchSharp,
 } from 'react-icons/io5';
-import { ReactElement } from 'react';
 
 interface FeatureProps {
   text: string;
@@ -43,7 +43,7 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
 
 export const FeatureA: React.FC = () => {
   return (
-    <Container maxW={'5xl'} py={12}>
+    <Container maxW={'7xl'} py={12}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Text
