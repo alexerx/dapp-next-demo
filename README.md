@@ -11,3 +11,7 @@ tech stack:
 TODO:
 
 - i18n?
+
+## reference
+
+https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7
