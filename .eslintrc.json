@@ -20,19 +20,7 @@
         ]
       }
     ],
-    "import/newline-after-import": ["error", { "count": 1 }],
-    "import/no-unused-modules": [
-      1,
-      {
-        "unusedExports": true,
-        "ignoreExports": [
-          "pages/**/*/index.tsx",
-          "pages/index.tsx",
-          "pages/api/*",
-          "pages/_*"
-        ]
-      }
-    ]
+    "import/newline-after-import": ["error", { "count": 1 }]
   },
   "plugins": ["import"]
 }

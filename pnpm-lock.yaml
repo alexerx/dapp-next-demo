@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@chakra-ui/icons': ^2.0.4
   '@chakra-ui/react': ^2.2.3
   '@emotion/react': ^11
   '@emotion/styled': ^11
@@ -16,10 +17,12 @@ specifiers:
   next: 12.2.2
   react: 18.2.0
   react-dom: 18.2.0
+  react-icons: ^4.4.0
   typescript: 4.7.4
   wagmi: ^0.5.9
 
 dependencies:
+  '@chakra-ui/icons': 2.0.4_react@18.2.0
   '@chakra-ui/react': 2.2.3_c3b12c6ff9ef33d31a8dbba89fbb82d8
   '@emotion/react': 11.9.3_d9efaa4a57b9ddc48121b447e3437c81
   '@emotion/styled': 11.9.3_9f060d9dc2b4fcb488bb7788ce42d0cb
@@ -28,6 +31,7 @@ dependencies:
   next: 12.2.2_react-dom@18.2.0+react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.4.0_react@18.2.0
   wagmi: 0.5.9_a3382a18da46f163d506932b2447e736
 
 devDependencies:
@@ -461,6 +465,27 @@ packages:
     dependencies:
       '@chakra-ui/system': 2.2.1_28db0a4ca0163f5d998b133de2adf2dc
       '@chakra-ui/utils': 2.0.3
+      react: 18.2.0
+    dev: false
+
+  /@chakra-ui/icon/3.0.4_react@18.2.0:
+    resolution: {integrity: sha512-9Ry+fa6EKRYUexffvgOJ9dRIkxCSnASgdSnb09EbQTgCTeM+47LUsxR2+r8pbY6ZT5D4m2zRLkTrv7O7icoyOw==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0-next.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/utils': 2.0.4
+      react: 18.2.0
+    dev: false
+
+  /@chakra-ui/icons/2.0.4_react@18.2.0:
+    resolution: {integrity: sha512-/Xh6UtIilFhSCxZ6pKmB3zaatvGMc+IAvPb0TvlegWfNaLI7XwHWkEoK+GxYXV02wT/yqmup2gd41/OL3S0YLg==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0-next.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/icon': 3.0.4_react@18.2.0
+      '@types/react': 18.0.15
       react: 18.2.0
     dev: false
 
@@ -1001,6 +1026,15 @@ packages:
 
   /@chakra-ui/utils/2.0.3:
     resolution: {integrity: sha512-BEGENnswWMc58fixsmdxRrnrbYZSrrDsTuFcvh+A4sfrbVbVfMQNJBSV46LT0Z4roMZ10Pi5/brlLH1+22gGQw==}
+    dependencies:
+      '@types/lodash.mergewith': 4.6.6
+      css-box-model: 1.2.1
+      framesync: 5.3.0
+      lodash.mergewith: 4.6.2
+    dev: false
+
+  /@chakra-ui/utils/2.0.4:
+    resolution: {integrity: sha512-pr5qFTrhCja1iQTajOr2WSvb+f4lpnLnnxWOSYOuIv7k8LBEtee4LpTs0jzBBB/vycuo6ppKdXyj7db9xTqZfA==}
     dependencies:
       '@types/lodash.mergewith': 4.6.6
       css-box-model: 1.2.1
@@ -4435,6 +4469,14 @@ packages:
       react-clientside-effect: 1.2.6_react@18.2.0
       use-callback-ref: 1.3.0_d9efaa4a57b9ddc48121b447e3437c81
       use-sidecar: 1.1.2_d9efaa4a57b9ddc48121b447e3437c81
+    dev: false
+
+  /react-icons/4.4.0_react@18.2.0:
+    resolution: {integrity: sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:
