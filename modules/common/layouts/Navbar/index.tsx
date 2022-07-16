@@ -1,12 +1,13 @@
-import { Box, useColorModeValue } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { throttle } from 'lodash';
 import { useRouter } from 'next/router';
 import { useEffect, useMemo, useState } from 'react';
 import { AppNavbar } from './AppNavbar';
 import { HomeNavBar } from './HomeNavbar';
+import { useSafeColorModeValue } from '../../../../core/hooks/useSafeColorModeValue';
 
 export const Navbar: React.FC = () => {
-  const bgColor = useColorModeValue('white', 'gray.800');
+  const bgColor = useSafeColorModeValue('white', 'gray.800');
 
   const [scrollTop, setScrollTop] = useState(0);
   const boxShadow = useMemo(() => {
