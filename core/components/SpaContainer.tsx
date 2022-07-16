@@ -10,7 +10,7 @@ export interface SpaContainerProps {
 
 let isWindow = false;
 
-const InnerApp = (props) => {
+const InnerApp = (props: any) => {
   const { children } = props;
   return <BrowserRouter>{children}</BrowserRouter>;
 };
