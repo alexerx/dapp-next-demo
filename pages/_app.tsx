@@ -1,8 +1,8 @@
-import '../styles/globals.css';
-import type { AppProps } from 'next/app';
 import { ChakraProvider } from '@chakra-ui/react';
-import { WagmiConfig, createClient } from 'wagmi';
 import { getDefaultProvider } from 'ethers';
+import type { AppProps } from 'next/app';
+import { createClient, WagmiConfig } from 'wagmi';
+import '../styles/globals.css';
 import { theme } from '../themes';
 
 const client = createClient({
