@@ -10,7 +10,7 @@ import { ReactNode } from 'react';
 
 export const FeatureB: React.FC = () => {
   return (
-    <Container maxW={'7xl'} zIndex={10} position={'relative'}>
+    <Container maxW={'7xl'} position={'relative'}>
       <Stack direction={{ base: 'column', lg: 'row' }}>
         <Stack
           flex={1}
