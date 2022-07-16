@@ -90,7 +90,6 @@ export const Intro: React.FC = () => {
               fontWeight={'normal'}
               px={6}
               colorScheme={'brand'}
-              bg={'brand.400'}
               _hover={{ bg: 'brand.500' }}
             >
               Create a community
