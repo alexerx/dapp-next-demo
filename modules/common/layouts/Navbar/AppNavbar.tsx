@@ -1,8 +1,8 @@
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Box, Button, Flex, Stack, useColorMode } from '@chakra-ui/react';
-import { useLogin } from '../login/useLogin';
+import { useLogin } from '../../../login/useLogin';
 
-export const Nav: React.FC = () => {
+export const AppNavbar: React.FC = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const { renderContent: loginModalRenderContent, onOpen: openLoginModal } =
     useLogin();

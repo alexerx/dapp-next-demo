@@ -2,7 +2,7 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Box, Button, Flex, Stack, useColorMode } from '@chakra-ui/react';
 import Link from 'next/link';
 
-export const Nav: React.FC = () => {
+export const HomeNavBar: React.FC = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box px={4} zIndex={9999}>
