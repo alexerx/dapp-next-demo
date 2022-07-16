@@ -59,7 +59,7 @@ export const Intro: React.FC = () => {
                 position: 'absolute',
                 bottom: 1,
                 left: 0,
-                bg: 'main.400',
+                bg: 'brand.400',
                 zIndex: -1,
               }}
             >
@@ -89,9 +89,9 @@ export const Intro: React.FC = () => {
               size={'lg'}
               fontWeight={'normal'}
               px={6}
-              colorScheme={'main'}
-              bg={'main.400'}
-              _hover={{ bg: 'main.500' }}
+              colorScheme={'brand'}
+              bg={'brand.400'}
+              _hover={{ bg: 'brand.500' }}
             >
               Create a community
             </Button>
@@ -120,7 +120,7 @@ export const Intro: React.FC = () => {
             top={'-20%'}
             left={0}
             zIndex={-1}
-            color={useColorModeValue('main.50', 'main.400')}
+            color={useColorModeValue('brand.50', 'brand.400')}
           />
           <Box
             position={'relative'}

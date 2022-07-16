@@ -23,7 +23,7 @@ export const AppNavbar: React.FC = () => {
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
 
-              <Button size={'lg'} colorScheme={'main'} onClick={handleConnect}>
+              <Button size={'lg'} colorScheme={'brand'} onClick={handleConnect}>
                 Connect
               </Button>
             </Stack>

@@ -16,7 +16,7 @@ export const HomeNavBar: React.FC = () => {
             </Button>
 
             <Link href="/app">
-              <Button size={'lg'} colorScheme={'main'}>
+              <Button size={'lg'} colorScheme={'brand'}>
                 Launch App
               </Button>
             </Link>

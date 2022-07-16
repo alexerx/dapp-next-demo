@@ -84,8 +84,8 @@ export const FeatureA: React.FC = () => {
               text={'Financial Planning'}
             />
             <Feature
-              icon={<Icon as={IoSearchSharp} color={'main.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('main.100', 'main.900')}
+              icon={<Icon as={IoSearchSharp} color={'brand.500'} w={5} h={5} />}
+              iconBg={useColorModeValue('brand.100', 'brand.900')}
               text={'Market Analysis'}
             />
           </Stack>

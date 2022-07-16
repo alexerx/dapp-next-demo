@@ -1,7 +1,11 @@
 import { extendTheme, theme as baseTheme } from "@chakra-ui/react";
 
 const colors = {
-  main: baseTheme.colors.purple
+  brand: baseTheme.colors.purple,
 };
 
-export const theme = extendTheme({ colors });
+const config = {
+  initialColorMode: 'system',
+}
+
+export const theme = extendTheme({ colors, config });

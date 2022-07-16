@@ -128,10 +128,10 @@ export const Footer: React.FC = () => {
                 }}
               />
               <IconButton
-                bg={useColorModeValue('main.400', 'main.800')}
+                bg={useColorModeValue('brand.400', 'brand.800')}
                 color={useColorModeValue('white', 'gray.800')}
                 _hover={{
-                  bg: 'main.600',
+                  bg: 'brand.600',
                 }}
                 aria-label="Subscribe"
                 icon={<BiMailSend />}
