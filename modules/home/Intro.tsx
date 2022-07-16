@@ -66,11 +66,11 @@ export const Intro: React.FC = () => {
               Help you build, and
             </Text>
             <br />
-            <Text as={'span'} color={'main.400'} pt={8}>
+            <Text as={'span'} color={'brand.400'} pt={8}>
               manage vip
             </Text>
             <br />
-            <Text as={'span'} color={'main.200'} pt={8}>
+            <Text as={'span'} color={'brand.200'} pt={8}>
               in Web3.0
             </Text>
           </Heading>
