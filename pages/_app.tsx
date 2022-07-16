@@ -2,10 +2,23 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { getDefaultProvider } from 'ethers';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
-import { createClient, WagmiConfig } from 'wagmi';
-import { Layout } from '../modules/common/layouts/Layout';
+import {
+  configureChains,
+  createClient,
+  defaultChains,
+  WagmiConfig,
+} from 'wagmi';
 import '../styles/globals.css';
+
+import { alchemyProvider } from 'wagmi/providers/alchemy';
+import { publicProvider } from 'wagmi/providers/public';
+
+import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet';
+import { InjectedConnector } from 'wagmi/connectors/injected';
+import { MetaMaskConnector } from 'wagmi/connectors/metaMask';
+import { WalletConnectConnector } from 'wagmi/connectors/walletConnect';
 import { theme } from '../themes';
+import { Layout } from '../modules/common/layouts/Layout';
 
 export type NextPageWithLayout = NextPage & {
   getLayout?: (page: React.ReactElement) => React.ReactNode;
@@ -15,9 +28,37 @@ export type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
+const { chains, provider, webSocketProvider } = configureChains(defaultChains, [
+  // alchemyProvider({ alchemyId }),
+  publicProvider(),
+]);
+
 const client = createClient({
   autoConnect: true,
-  provider: getDefaultProvider(),
+  connectors: [
+    new MetaMaskConnector({ chains }),
+    new CoinbaseWalletConnector({
+      chains,
+      options: {
+        appName: 'wagmi',
+      },
+    }),
+    new WalletConnectConnector({
+      chains,
+      options: {
+        qrcode: true,
+      },
+    }),
+    new InjectedConnector({
+      chains,
+      options: {
+        name: 'Injected',
+        shimDisconnect: true,
+      },
+    }),
+  ],
+  provider,
+  webSocketProvider,
 });
 
 const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {

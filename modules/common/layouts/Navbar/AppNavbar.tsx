@@ -1,5 +1,6 @@
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Box, Button, Flex, Stack, useColorMode } from '@chakra-ui/react';
+import Link from 'next/link';
 import { useLogin } from '../../../login/useLogin';
 
 export const AppNavbar: React.FC = () => {
@@ -13,9 +14,11 @@ export const AppNavbar: React.FC = () => {
 
   return (
     <>
-      <Box px={4} zIndex={9999}>
+      <Box px={4}>
         <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>MintVip</Box>
+          <Box>
+            <Link href={'/'}>MintVip</Link>
+          </Box>
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={2}>

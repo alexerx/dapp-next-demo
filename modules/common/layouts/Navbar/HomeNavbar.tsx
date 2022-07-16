@@ -5,9 +5,11 @@ import Link from 'next/link';
 export const HomeNavBar: React.FC = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Box px={4} zIndex={9999}>
+    <Box px={4}>
       <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
-        <Box>MintVip</Box>
+        <Box>
+          <Link href={'/'}>MintVip</Link>
+        </Box>
 
         <Flex alignItems={'center'}>
           <Stack direction={'row'} spacing={2}>
