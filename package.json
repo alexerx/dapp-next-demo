@@ -7,16 +7,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cu": "npx npm-check-updates",
+    "cuu": "npx npm-check-updates -u"
   },
   "engines": {
-    "node": ">=14.0.0",
     "yarn": "please-use-pnpm",
     "npm": "please-use-pnpm"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.4",
-    "@chakra-ui/react": "^2.2.3",
+    "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@types/lodash": "^4.14.182",
@@ -35,14 +36,15 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@types/node": "18.0.3",
+    "@types/node": "18.0.5",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
-    "eslint": "8.19.0",
+    "eslint": "8.20.0",
     "eslint-config-next": "12.2.2",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "husky": "^8.0.1",
+    "npm-check-updates": "^15.3.4",
     "typescript": "4.7.4"
   }
 }
